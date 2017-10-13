@@ -1,0 +1,437 @@
+* {
+  box-sizing: border-box;
+}
+header {
+
+  /* position */
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  /* flexbox */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* design */
+  background-color: #f5f5f5;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,.1);
+  padding: 15px 30px;
+}
+
+.header_heading {
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+  line-height: 30px;
+  margin: 10px;
+  color: #141c5a
+}
+
+.background-color {
+  width: 200px;
+  height: 200px;
+  background-color: #f5f5f5;
+  position: relative;
+  margin: 50px;
+  margin-bottom: 100px;
+}
+.main {
+  padding-top: 60px;
+  padding-right: 220px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.aside {
+  width: 200px;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  bottom: 0;
+
+  /* design */
+  padding: 20px 30px 20px 10px;
+}
+.aside_heading {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.aside_nav-item {
+  margin-bottom: 15px;
+}
+.aside_nav-link {
+
+  /* design */
+  font-weight: 700;
+  color: midnightblue;
+  border-bottom: 2px solid midnightblue;
+  text-decoration: none;
+
+  /* add transition for hover */
+  transition: color .3s ease-out, border-color .3s ease-out;
+}
+
+/* hover */
+.aside_nav-link:hover {
+  color: #04042b;
+  border-color: transparent;
+}
+
+body {
+  font-family: 'Fira Sans Condensed', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #161616;
+}
+/* экспперименты с position */
+.position-parent {
+  width: 200px;
+  height: 300px;
+  background: pink;
+  position: relative;
+  margin: 50px;
+}
+.position-child {
+  height: 300px;
+  background: violet;
+  position: relative;
+  left: 100px;
+  top: 100px;
+}
+.position-child-absolute {
+  width: 100px;
+  height: 300px;
+  background: gray;
+  position: absolute;
+  left: 100px;
+  top: 100px;
+}
+.position-child-fixed {
+  width: 100px;
+  height: 300px;
+  background: orange;
+  position: fixed;
+  right: 100px;
+  top: 100px;
+}
+
+.position-child-z-index {
+  width: 100px;
+  height: 300px;
+  background: purple;
+  position: absolute;
+  left: 100px;
+  top: 100px;
+}
+
+.z-index-1 {
+  left: 50px;
+  top: 50px;
+  background: red;
+  z-index: 3;
+}
+.z-index-2 {
+  left: 100px;
+  top: 100px;
+  background: green;
+  z-index: 2;
+}
+.z-index-3 {
+  left: 150px;
+  top: 150px;
+  background: blue;
+  z-index: 1;
+}
+
+.font {
+  padding: 100px 0;
+}
+.font-size{
+  font-size: 30px;
+}
+.font-weight {
+  font-weight: 700;
+}
+.font-style {
+  font-style: italic;
+}
+.font-variant {
+  font-variant: small-caps;
+}
+.text-shadow {
+  text-shadow: 5px 5px 1px gray;
+}
+
+/* background-image-svg */
+.background-img-svg {
+  width: 700px;
+  height: 100px;
+  margin: 10px;
+  background-image: url("img/pumpkin.svg");
+  background-repeat: repeat;
+}
+
+.background-img-img {
+  width: 300px;
+  height: 100px;
+  margin: 10px;
+  background-image: url("img/2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* flex-box */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+
+  /*align-items: center;*/
+  align-content: stretch;
+
+  height: 400px;
+  flex-wrap: wrap;
+  background-color: white;
+  border: 1px solid navy;
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 200px;
+}
+
+.flex-element {
+  width: 300px;
+}
+
+.flex-element-1 {
+  order: 5;
+  background-color: green;
+}
+.flex-element-2 {
+  background-color: navy;
+}
+.flex-element-3 {
+  background-color: purple;
+  flex-grow: 5;
+}
+.flex-element-4 {
+  background-color: lime;
+}
+
+.flex-element-5 {
+  background-color: olive;
+}
+
+
+.linear-gradient {
+  width: 200px;
+  height: 200px;
+  background-image: linear-gradient(red, pink);
+  margin: 50px;
+}
+
+.linear-gradient-1 {
+  width: 200px;
+  height: 200px;
+  background-image: linear-gradient(to bottom, cyan, red);
+  margin: 50px;
+}
+
+.linear-gradient-2 {
+  width: 200px;
+  height: 200px;
+  background-image: linear-gradient(180deg, pink, yellow);
+  margin: 50px;
+}
+
+.linear-gradient-3 {
+  width: 200px;
+  height: 200px;
+  background-image: linear-gradient(lime, fuchsia, teal);
+  margin: 50px;
+}
+
+.linear-gradient-4 {
+  width: 200px;
+  height: 200px;
+  background-image: linear-gradient(orange 10%, teal 50%, red 45%, aqua 70%);
+  margin: 50px;
+}
+
+.radial-gradient {
+  width: 400px;
+  height: 200px;
+  background-image: radial-gradient(circle, pink, yellow);
+  margin: 50px;
+}
+
+.radial-gradient-2 {
+  width: 400px;
+  height: 200px;
+  background-image: radial-gradient(at left bottom, pink, yellow);
+  margin: 50px;
+}
+
+.gradient-generator {
+  width: 200px;
+  height: 200px;
+  background-image: linear-gradient(to bottom, #e4f5fc 0%,#2cf9c3 100%); /* W3C, IE10+, FF16+,  */
+  margin: 50px;
+}
+
+
+.box-shadow {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 10px 15px 5px 1px black;
+  margin: 44px;
+}
+
+.box-shadow-inset {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(227, 245, 243, 0.5);
+  border: 1px solid white;
+  box-shadow: inset 1px 0px 17px 8px rgba(0, 255, 255, 0.5);
+  margin: 44px;
+}
+
+.calc-parent {
+  display: flex;
+  height: 200px;
+  border: 1px solid gray;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: 200px;
+}
+.body {
+  padding: 50px;
+}
+.calc-child {
+  background-color: gray;
+  width: calc(50% - 10px);
+  margin: 0 10px;
+
+}
+
+.calc-parent-part {
+  display: flex;
+  height: 200px;
+  border: 1px solid gray;
+}
+
+.calc-child-part {
+  width: calc(100% / 7 - 10px);
+  background-color: green;
+  margin: 0 5px;
+}
+
+.hover {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 20px;
+}
+
+.hover:hover {
+  width: 50px;
+  height: 50px;
+  border: 1px dash black;
+  background-color: blue;
+}
+
+.link-hover {
+  color: green;
+  font-size: 36px;
+}
+
+.link-hover:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.focus {
+  height: 50px;
+  width: 150px
+  border: 1px solid blue;
+  border-radius: 10px;
+  padding: 10px
+  outline: 0;
+}
+
+.focus:focus {
+  box-shadow: inset 0 0 15 px 0 rgba(255, 0, 0, 0.5);
+}
+
+.pseudo-classes-parent {
+  padding: 20px;
+  border: 1px dashed black;
+
+}
+.pseudo-classes-child {
+  height: 20px;
+  margin: 20px;
+  border: 1px solid gray;
+}
+
+.pseudo-classes-child:first-child {
+  background-color: blue;
+  margin-top: 0;
+}
+
+.pseudo-classes-child:last-child {
+  background-color: olive;
+  margin-bottom: 0;
+}
+
+.pseudo-classes-child:nth-child(2) {
+  border-color: red;
+}
+
+.pseudo-classes-child:nth-child(even) {
+  background-color: yellow;
+}
+
+.pseudo-classes-child:nth-child(odd) {
+  background-color: pink;
+}
+
+.pseudo-elements:before {
+  content: 'Я впереди всего текста';
+  color: blue;
+}
+
+.pseudo-elements:after {
+  content: 'Я после всего текста';
+  color: red;
+}
+.transition-color {
+  font-size: 30px;
+  color: black;
+  transition: color 1s ease 1s, font-size 2s ease-out;
+}
+
+.transition-color:hover {
+  color: red;
+  font-size: 45px;
+}
+
+.transition-left {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  position: relative;
+  left: 0;
+  transition: left 3s ease-in 1s, width 2s;
+}
+
+.transition-left:hover {
+  left: 155px;
+  width: 400px;
+}
