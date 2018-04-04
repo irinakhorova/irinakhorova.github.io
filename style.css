@@ -239,7 +239,7 @@ header {
 }
 
 .footer {
-  margin-top: 17px;
+  margin-top: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -648,7 +648,7 @@ img {
     margin-left: 10px;
   }
   .footer {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 
