@@ -376,7 +376,8 @@ header {
   color:#6d5f64;
   position:relative;
   z-index:5;
-  overflow:hidden;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-family: Roboto Slab;
 }
 
@@ -396,20 +397,25 @@ header {
 
 .item-type-move .item-info .headline {
   font-size:10px;
+  margin-top: -15px;
   top:2px;
-
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .item-type-move .item-info .item-text {
   font-size:9px;
   font-style:oblique;
   bottom:2px;
+  margin-bottom:-10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .item-type-move .item-info .line {
    height:1px;
-   width:85%;
-   margin:10px auto 0 auto;
+   width:95%;
+   margin: 6px auto 0 auto;
    background-color:rgb(10, 255, 223);
 }
 
@@ -724,17 +730,12 @@ img {
     grid-auto-rows: minmax(100px, auto);
     grid-auto-flow: dense;
   }
-  .item-type-move,
-  .item-info,
-  .headline { font-size:10px; }
 
-  .item-type-move,
-  .item-info,
-  .item-text { font-size:9px; }
+  .item-type-move .item-info .headline { font-size:10px; }
 
-  .item-type-move,
-  .item-info,
-  .line { width: 85%; }
+  .item-type-move .item-info .item-text { font-size:9px; }
+
+  .item-type-move .item-info .line { width: 85%; }
 }
 
 
@@ -826,7 +827,10 @@ img {
     font-size:18px;
     margin-top:0px;
   }
-  .item-type-move .item-info .item-text { font-size:14px; }
+  .item-type-move .item-info .item-text {
+    font-size:14px;
+    margin-bottom:0px;
+  }
   .item-type-move .item-info .line {
      height:2px;
      margin:10px auto 0 auto;
