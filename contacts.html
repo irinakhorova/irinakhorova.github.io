@@ -1,7 +1,10 @@
 <!doctype html>
-<html>
-  <head lang="ru">
+<html lang="ru">
+
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- заголовок документа -->
     <title>Contacts</title>
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:300|Oswald:400&amp;subset=cyrillic" rel="stylesheet">
@@ -10,30 +13,114 @@
     <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Extended+Text" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
+
   <body>
     <!-- здесь будет тело документа </-->
-    <header class="header">
-      <h1 class="header_heading">iren.constante</h1>
-      <nav class="header_nav">
-          <a href="index.html" class="header_nav-link">flow</a>
-          <a href="gallery.html" class="header_nav-link">gallery</a>
-          <a href="contacts.html" class="header_nav-link">contacts</a>
-      </nav>
-    </header>
-    <main class="main_contacts">
-      <section class="contacts_section">
-        <div class="flow_contacts">
-          <a href="tel:+79636772765" class="izuminka_contacts">call me maybe</a>
-        </div>
-        <div class="flow_contacts">
-          <p class="contacts_email">e-mail: <a href="mailto:iren.constante@gmail.com" class="contacts_email-link">iren.constante@gmail.com</a></p>
-        </div>
-      </section>
-    </main>
-    <footer class="footer_contacts">
-      <section class="footer_section">
-        <p class="footer_copyright">All rights reserved © constante</p>
-      </section>
-    </footer>
-    </body>
+    <div class="grid-container">
+
+      <div class="grid-header">
+        <header class="header">
+
+          <section class="header_section">
+           <h1><a href="iren.html" class="header_heading">iren.constante</a></h1>
+          </section>
+
+
+          <section class="header_section">
+           <nav class="header_nav">
+            <a href="index.html" class="header_nav-link" id="F">flow</a>
+            <a href="gallery.html" class="header_nav-link">gallery</a>
+            <a href="contacts.html" class="header_nav-link">contacts</a>
+           </nav>
+          </section>
+
+        </header>
+      </div>
+
+      <div class="grid-main-content">
+        <main class="main">
+
+          <div class="contacts_flow">
+
+            <div class="contacts_post">
+              <div class="contacts_post-heading">
+                Хочешь? Пиши.
+              </div>
+              <div class="contacts_post-content">
+                iren.constante@gmail.com
+              </div>
+            </div>
+
+            <div class="contacts_post">
+              <div class="contacts_post-heading">
+                 Хочешь? Звони.
+              </div>
+              <div class="contacts_post-content">
+                +79636772765
+              </div>
+            </div>
+
+            <picture >
+              <source media="(max-width: 549px)" srcset="img/22.jpg">
+              <source media="(max-width: 1023px)" srcset="img/007-1.jpg">
+              <source media="(min-width: 1024px)" srcset="img/007.jpg">
+              <img src="img/007-1.jpg" alt="">
+            </picture>
+
+            <picture>
+              <source media="(max-width: 549px)" srcset="img/008-2.jpg">
+              <source media="(max-width: 1023px)" srcset="img/008-1.jpg">
+              <source media="(min-width: 1024px)" srcset="img/008.jpg">
+              <img  src="img/008-1.jpg"  alt="">
+            </picture>
+
+          </div>
+
+        </main>
+      </div>
+
+
+      <div class="grid-aside">
+        <aside class="aside">
+
+          <h2 class="aside_heading">cash:</h2>
+
+          <nav class="aside_nav">
+            <div class="aside_nav-item">
+              <a href="https://ru.pinterest.com/iren_constante/" target="_blank" class="aside_nav-link">my Pinterest</a>
+            </div>
+            <div class="aside_nav-item">
+              <a href="https://www.facebook.com/irina.khorova" target="_blank" class="aside_nav-link">my Facebook</a>
+            </div>
+            <div class="aside_nav-item">
+              <a href="https://vk.com/c_299792458" target="_blank" class="aside_nav-link">my Vkontakte</a>
+            </div>
+          </nav>
+
+        </aside>
+      </div>
+
+
+      <div class="grid-footer">
+        <footer class="footer">
+
+          <section class="footer_section">
+            <a href="tel:+79636772765" class="izuminka">call me maybe</a>
+          </section>
+
+          <section class="footer_section">
+            <div class="footer_copyright">All rights reserved © constante</div>
+          </section>
+
+          <section class="footer_section">
+            <div class="footer_email">E-mail: <a href="mailto:iren.constante@gmail.com" class="footer_email-link">iren.constante@gmail.com</a></div>
+          </section>
+
+        </footer>
+      </div>
+
+    </div>
+
+  </body>
+
 </html>

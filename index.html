@@ -1,7 +1,10 @@
 <!doctype html>
-<html>
-  <head lang="ru">
+<html lang="ru">
+
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- заголовок документа -->
     <title>Iren Constante</title>
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:300|Oswald:400&amp;subset=cyrillic" rel="stylesheet">
@@ -10,60 +13,91 @@
     <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Extended+Text" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
+
   <body>
-    <!-- здесь будет тело документа </-->
-    <header class="header">
-      <h1 class="header_heading">iren.constante</h1>
-      <nav class="header_nav">
-          <a href="index.html" class="header_nav-link">flow</a>
-          <a href="gallery.html" class="header_nav-link">gallery</a>
-          <a href="contacts.html" class="header_nav-link">contacts</a>
-      </nav>
-    </header>
-    <main class="main">
-      <section class="flow">
+   <!-- здесь будет тело документа </-->
+    <div class="grid-container">
 
-        <article id="article-1" class="flow_post">
-          <div class="flow_post-image" style="background-image: url('img/1.jpg');"></div>
-          <div class="flow_post-body">
-            <h3 class="flow_post-heading">Воспоминания о началах дизайна</h3>
+     <div class="grid-header">
+       <header class="header">
 
-            <p class="flow_post-content">И первое, что я услышала о классификации сайтов: <strong><em>про поиск</em></strong>, <strong><em>про ресурсы</em></strong>. Сайты, используемые при поиске информации делятся на 3 типа: классические поисковики (Википедия, блоги и соц.сети) общие и профессиональные. При поиске необходимо использовать фильтры, а также изучать контекст получаемой информации — степень достоверности, например. Можем использовать расширенный поиск, гипер-поиск, тематические агрегаторы.</p>
-            <div class="flow_post-more">
-              <a href="article.html" class="flow_post-more-link">это просто дорого моему сердцу.</a>
-            </div>
-          </div>
-        </article>
+         <section class="header_section">
+          <h1><a href="iren.html" class="header_heading">iren.constante</a></h1>
+         </section>
 
-        <article id="article2" class="flow_post">
-          <div class="flow_post-image" style="background-image: url('img/3.jpg');"></div>
-          <div class="flow_post-body">
-            <h3 class="flow_post-heading">Почему бутерброд лучше, чем вечное блаженство</h3>
+         <section class="header_section">
+          <nav class="header_nav">
+            <a href="index.html" class="header_nav-link" id="F">flow</a>
+            <a href="gallery.html" class="header_nav-link">gallery</a>
+            <a href="contacts.html" class="header_nav-link">contacts</a>
+          </nav>
+         </section>
 
-            <p class="flow_post-content"><strong>Сократ и софисты: майевтика против релятивизма.</strong> В V в. до н.э. во многих городах Греции установилась демократическая форма политической жизни. Это значит, что на различные государственные должности людей не назначали, а выбирали путем народного голосования. Стало быть, человек, который вызывал симпатии избирателей, удачно выступив перед ними в народном собрании, мог занять какой-нибудь ответственный пост. Ведь для того, чтобы за кого-то проголосовали, он обязательно должен был понравиться массе народа, которая коллективно и решала политическую судьбу тех или иных претендентов.</p>
-            <div class="flow_post-more">
-              <a href="article2.html" class="flow_post-more-link">это полезно.</a>
-            </div>
-          </div>
-        </article>
+       </header>
+     </div>
 
-        <article id="article2" class="flow_post">
-          <div class="flow_post-image" style="background-image: url('img/8.jpg'); background-position: center;"></div>
-          <div class="flow_post-body">
-            <h3 class="flow_post-heading">Словарь нового горожанина</h3>
+     <div class="grid-main-content">
+       <main class="main">
 
-            <p class="flow_post-content">В жизни горожанина все время возникают новые явления: стричься теперь положено в барбершопе, а мороженое есть в джелатерии. Обычные котлеты уже не в моде — их сменили митболы с фалафелем. Редакция <strong>«Бумаги»</strong> не всегда сама может разобраться, что положено делать в поп-ап-кафе и плей-лофтах, теряется, когда слышит о мастхэвах, некоторые всерьез смущаются, когда им предлагают «попитчить идею». Чтобы не путаться впредь самим и не путать читателей, редакция запускает проект, в котором разберется в новом лексиконе горожан, модников и айтишников. В первом выпуске все то, что положено знать обычному петербуржцу: лифтолуки, корнеры и капкейки с примерами употребления из советского кино.</p>
-            <div class="flow_post-more">
-              <a href="article3.html" class="flow_post-more-link">это очень интересно.</a>
-            </div>
-          </div>
-        </article>
+         <section class="flow">
 
+           <article class="flow_post">
+             <picture class="index_img">
+               <source media="(max-width: 549px)" srcset="img/2.jpg">
+               <source media="(max-width: 1023px)" srcset="img/1.jpg">
+               <source media="(min-width: 1024px)" srcset="img/24.jpg">
+               <img  src="img/1.jpg" style="max-height: 200px;" alt="">
+             </picture>
+             <div class="flow_post-body">
+               <div class="flow_post-more">
+                 <a href="article.html" class="flow_post-more-link">это просто дорого моему сердцу.</a>
+               </div>
+               <h3 class="flow_post-heading">Воспоминания о началах дизайна</h3>
 
-          <a href="tel:+79636772765" class="izuminka">call me maybe</a>
-      </section>
-      <aside class="aside">
+               <p class="flow_post-content">И первое, что я услышала о классификации сайтов: <strong><em>про поиск</em></strong>, <strong><em>про ресурсы</em></strong>. Сайты, используемые при поиске информации делятся на 3 типа: классические поисковики (Википедия, блоги и соц.сети) общие и профессиональные. При поиске необходимо использовать фильтры, а также изучать контекст получаемой информации — степень достоверности, например. Можем использовать расширенный поиск, гипер-поиск, тематические агрегаторы.</p>
+             </div>
+           </article>
+
+           <article class="flow_post">
+             <picture class="index_img">
+               <source media="(max-width: 768px)" srcset="img/3.jpg">
+               <source media="(min-width: 1024px)" srcset="img/3.jpg">
+               <img  src="img/3.jpg" style=" max-height: 200px;"  alt="">
+             </picture>
+             <div class="flow_post-body">
+               <div class="flow_post-more">
+                 <a href="article2.html" class="flow_post-more-link">это полезно.</a>
+               </div>
+               <h3 class="flow_post-heading">Почему бутерброд лучше, чем вечное блаженство</h3>
+               <p class="flow_post-content"><strong>Сократ и софисты: майевтика против релятивизма.</strong> В V в. до н.э. во многих городах Греции установилась демократическая форма политической жизни. Это значит, что на различные государственные должности людей не назначали, а выбирали путем народного голосования. Стало быть, человек, который вызывал симпатии избирателей, удачно выступив перед ними в народном собрании, мог занять какой-нибудь ответственный пост. Ведь для того, чтобы за кого-то проголосовали, он обязательно должен был понравиться массе народа, которая коллективно и решала политическую судьбу тех или иных претендентов.</p>
+             </div>
+           </article>
+
+           <article class="flow_post">
+             <picture class="index_img">
+               <source media="(max-width: 768px)" srcset="img/8.jpg">
+               <source media="(min-width: 1024px)" srcset="img/8.jpg">
+               <img  src="img/8.jpg" style=" max-height: 200px;" alt="">
+             </picture>
+             <div class="flow_post-body">
+               <div class="flow_post-more">
+                 <a href="article3.html" class="flow_post-more-link">это очень интересно.</a>
+               </div>
+               <h3 class="flow_post-heading">Словарь нового горожанина</h3>
+               <p class="flow_post-content">В жизни горожанина все время возникают новые явления: стричься теперь положено в барбершопе, а мороженое есть в джелатерии. Обычные котлеты уже не в моде — их сменили митболы с фалафелем. Редакция «<a class="flow_link" href="https://paperpaper.ru/" target="_blank"><strong>Бумаги</strong></a>» не всегда сама может разобраться, что положено делать в поп-ап-кафе и плей-лофтах, теряется, когда слышит о мастхэвах, некоторые всерьез смущаются, когда им предлагают «попитчить идею». Чтобы не путаться впредь самим и не путать читателей, редакция запускает проект, в котором разберется в новом лексиконе горожан, модников и айтишников. В первом выпуске все то, что положено знать обычному петербуржцу: лифтолуки, корнеры и капкейки с примерами употребления из советского кино.</p>
+             </div>
+           </article>
+
+         </section>
+
+       </main>
+     </div>
+
+     <div class="grid-aside">
+       <aside class="aside">
+
         <h2 class="aside_heading">cash:</h2>
+
         <nav class="aside_nav">
           <div class="aside_nav-item">
             <a href="article.html" class="aside_nav-link">Воспоминания о началах дизайна</a>
@@ -75,19 +109,30 @@
             <a href="article3.html" class="aside_nav-link">Словарь нового горожанина</a>
           </div>
         </nav>
-      </aside>
-    </main>
-    <footer class="footer">
-      <section class="footer_section">
-        <p class="footer_copyright">All rights reserved</p>
-      </section>
-      <section class="footer_section">
-        <p class="footer_copyright">© constante</p>
-      </section>
-      <section class="footer_section">
-        <p class="footer_email">E-mail: <a href="mailto:iren.constante@gmail.com" class="footer_email-link">iren.constante@gmail.com</a></p>
-      </section>
-    </footer>
+
+       </aside>
+     </div>
+
+     <div class="grid-footer">
+       <footer class="footer">
+
+         <section class="footer_section">
+          <a href="tel:+79636772765" class="izuminka">call me maybe</a>
+         </section>
+
+         <section class="footer_section">
+           <div class="footer_copyright">All rights reserved © constante</div>
+         </section>
+
+         <section class="footer_section">
+           <div class="footer_email">E-mail: <a href="mailto:iren.constante@gmail.com" class="footer_email-link">iren.constante@gmail.com</a></div>
+         </section>
+
+       </footer>
+     </div>
+
+    </div>
 
   </body>
+
 </html>

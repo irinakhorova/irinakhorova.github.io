@@ -1,48 +1,366 @@
 <!doctype html>
-<html>
-<head lang="ru">
-  <meta charset="utf-8">
-  <!-- заголовок документа -->
-  <title>Gallery</title>
-  <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:300|Oswald:400&amp;subset=cyrillic" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Special+Elite|VT323" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Extended+Text" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- здесь будет тело документа </-->
-  <header class="header">
-    <h1 class="header_heading">iren.constante</h1>
-    <nav class="header_nav">
-        <a href="index.html" class="header_nav-link">flow</a>
-        <a href="gallery.html" class="header_nav-link">gallery</a>
-        <a href="contacts.html" class="header_nav-link">contacts</a>
-    </nav>
-  </header>
-  <main class="gallery">
-    <div class="gallery__wrapper">
-      <div class="gallery__item" style="background-image: url('img/7.jpg');"></div>
-      <div class="gallery__item" style="background-image: url('img/13.jpg');"></div>
-      <div class="gallery__item" style="background-image: url('img/9.jpg');"></div>
-      <div class="gallery__item" style="background-image: url('img/16.jpg');"></div>
-      <div class="gallery__item" style="background-image: url('img/14.jpg');"></div>
-      <div class="gallery__item" style="background-image: url('img/4.jpg');"></div>
-      <div class="gallery__item" style="background-image: url('img/8.jpg');"></div>
-      <div class="gallery__item" style="background-image: url('img/10.jpg');"></div>
-      <div class="gallery__item" style="background-image: url('img/11.jpg');"></div>
+<html lang="ru">
+
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- заголовок документа -->
+    <title>Gallery</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:300|Oswald:400&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite|VT323" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Extended+Text" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' >
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+   <!-- здесь будет тело документа -->
+    <div class="grid-container">
+
+      <div class="grid-header">
+        <header class="header">
+
+          <section class="header_section">
+           <h1><a href="iren.html" class="header_heading">iren.constante</a></h1>
+          </section>
+
+          <section class="header_section">
+            <nav class="header_nav">
+            <a href="index.html" class="header_gal-nav-link" id="FG">flow</a>
+            <i></i><i></i><i></i>
+            <a href="gallery.html" class="header_gal-nav-link">gallery<y></y><y></y><y></y></a>
+            <a href="contacts.html" class="header_gal-nav-link">contacts</a>
+            </nav>
+          </section>
+
+        </header>
+      </div>
+
+      <div class="grid-main-content">
+        <main class="gallery">
+
+          <div class="gallery_grid">
+
+            <div class="gallery_item gallery_item_long" >
+              <picture >
+                <source media="(max-width: 768px)" srcset="img/7-1.jpg">
+                <source media="(max-width: 1023px)" srcset="img/7-2.jpg">
+                <source media="(min-width: 1024px)" srcset="img/7.jpg">
+                <img class="img_gallery" src="img/7-2.jpg" style="" alt="">
+              </picture>
+              <div class="item item-type-move">
+                <div class="item-hover">
+                  <div class="item-info">
+                    <div class="headline">
+                      Умный котик.
+                      <div class="line"></div>
+                    </div>
+                    <div class="item-text">Потому что мурррр-мяу.</div>
+                  </div>
+                  <div class="mask"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery_item gallery_item_high">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/13-2.jpg">
+                <source media="(max-width: 1023px)" srcset="img/13-1.jpg">
+                <source media="(min-width: 1024px)" srcset="img/13.jpg">
+                <img class="img_gallery" src="img/13-2.jpg" style="" alt="">
+              </picture>
+              <div class="item item-type-move">
+                <div class="item-hover">
+                  <div class="item-info">
+                    <div class="headline">
+                      Вливайся
+                      <div class="line"></div>
+                    </div>
+                    <div class="item-text">в петли воды.</div>
+                  </div>
+                  <div class="mask"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery_item gallery_item_high">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/9-1.jpg">
+                <source media="(max-width: 1023px)" srcset="img/9-2.jpg">
+                <source media="(min-width: 1024px)" srcset="img/9.jpg">
+                <img class="img_gallery" src="img/9-2.jpg" style="" alt="">
+              </picture>
+              <div class="item item-type-move">
+                <div class="item-hover">
+                  <div class="item-info">
+                    <div class="headline">
+                      Внемли
+                      <div class="line"></div>
+                    </div>
+                    <div class="item-text">свет.</div>
+                  </div>
+                  <div class="mask"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery_item gallery_item_long2">
+              <picture >
+                <source media="(max-width: 768px)" srcset="img/16-2.jpg">
+                <source media="(max-width: 1023px)" srcset="img/16-1.jpg">
+                <source media="(min-width: 1024px)" srcset="img/16.jpg">
+                <img class="img_gallery" src="img/16-2.jpg" style=" max-height: 350px;" alt="">
+              </picture>
+              <div class="item item-type-move">
+                <div class="item-hover">
+                  <div class="item-info">
+                    <div class="headline">
+                      Триангуляция
+                      <div class="line"></div>
+                    </div>
+                    <div class="item-text">в стиле фуксия.</div>
+                  </div>
+                  <div class="mask"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery_item gallery_item_high2" >
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/14-4.jpg">
+                <source media="(max-width: 1023px)" srcset="img/14-3.jpg">
+                <source media="(min-width: 1024px)" srcset="img/14.jpg">
+                <img class="img_gallery" src="img/14-3.jpg" style="" alt="">
+              </picture>
+              <div class="item item-type-move">
+                <div class="item-hover">
+                  <div class="item-info">
+                    <div class="headline">
+                      Просто
+                      <div class="line"></div>
+                    </div>
+                    <div class="item-text">продолжай движение.</div>
+                  </div>
+                  <div class="mask"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery_item gallery_item_high">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/20-02.jpg">
+                <source media="(max-width: 1023px)" srcset="img/20-3.jpg">
+                <source media="(min-width: 1024px)" srcset="img/20.png">
+                <img class="img_gallery" src="img/20-3.jpg" style="" alt="">
+              </picture>
+              <div class="item item-type-move">
+                <div class="item-hover">
+                  <div class="item-info">
+                    <div class="headline">
+                      Вспышка
+                      <div class="line"></div>
+                    </div>
+                    <div class="item-text">сознания.</div>
+                  </div>
+                  <div class="mask"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery_item gallery_item_long">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/8-4.jpg">
+                <source media="(max-width: 1023px)" srcset="img/8-3.jpg">
+                <source media="(min-width: 1024px)" srcset="img/8.jpg">
+                <img class="img_gallery" src="img/8-3.jpg" style="" alt="">
+              </picture>
+              <div class="item item-type-move">
+                <div class="item-hover">
+                  <div class="item-info">
+                    <div class="headline">
+                      Слушай
+                      <div class="line"></div>
+                    </div>
+                    <div class="item-text">песню ветра.</div>
+                  </div>
+                  <div class="mask"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery_item gallery_item_long3" >
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/23-1.jpg">
+                <source media="(max-width: 1023px)" srcset="img/23-2.jpg">
+                <source media="(min-width: 1024px)" srcset="img/23.jpg">
+                <img class="img_gallery" src="img/23-1.jpg" style="" alt="">
+              </picture>
+              <div class="item item-type-move">
+                <div class="item-hover">
+                  <div class="item-info">
+                    <div class="headline">
+                      Сакральность
+                      <div class="line"></div>
+                    </div>
+                    <div class="item-text">в стиле фуксия.</div>
+                  </div>
+                  <div class="mask"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery_item" >
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/11-1.jpg">
+                <source media="(max-width: 1023px)" srcset="img/11-2.jpg">
+                <source media="(min-width: 1024px)" srcset="img/11.jpg">
+                <img class="img_gallery" src="img/11-2.jpg" style="" alt="">
+              </picture>
+              <div class="item item-type-move">
+                <div class="item-hover">
+                  <div class="item-info">
+                    <div class="headline">
+                      Noir..
+                      <div class="line"></div>
+                    </div>
+                    <div class="item-text">toujoirs noir!</div>
+                  </div>
+                  <div class="mask"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery_item gallery_item_long2">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/12-4.jpg">
+                <source media="(max-width: 1023px)" srcset="img/12-1.jpg">
+                <source media="(min-width: 1024px)" srcset="img/12.jpg">
+                <img class="img_gallery" src="img/12-4.jpg" style="" alt="">
+              </picture>
+              <div class="item item-type-move">
+                <div class="item-hover">
+                  <div class="item-info">
+                    <div class="headline">
+                      Любовь
+                      <div class="line"></div>
+                    </div>
+                    <div class="item-text">и не-голуби.</div>
+                  </div>
+                  <div class="mask"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery_item gallery_item_long2" >
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/15-0.jpg">
+                <source media="(max-width: 1023px)" srcset="img/15-1.jpg">
+                <source media="(min-width: 1024px)" srcset="img/15.jpg">
+                <img class="img_gallery" src="img/15.jpg" style="" alt="">
+              </picture>
+              <div class="item item-type-move">
+                <div class="item-hover">
+                  <div class="item-info">
+                    <div class="headline">
+                      Сальвадор Дали
+                      <div class="line"></div>
+                    </div>
+                    <div class="item-text">сделал это.</div>
+                  </div>
+                  <div class="mask"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery_item gallery_item_long2">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/18-9.jpg">
+                <source media="(max-width: 1023px)" srcset="img/18-1.jpg">
+                <source media="(min-width: 1024px)" srcset="img/18.jpg">
+                <img class="img_gallery" src="img/18-1.jpg" style="border-radius: 5px;" alt="">
+              </picture>
+              <div class="item item-type-move">
+                <div class="item-hover">
+                  <div class="item-info">
+                    <div class="headline">
+                      Найди
+                      <div class="line"></div>
+                    </div>
+                    <div class="item-text">ракурс.</div>
+                  </div>
+                  <div class="mask"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery_item gallery_item_long2">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/17-1.jpg">
+                <source media="(max-width: 1023px)" srcset="img/17-2.jpg">
+                <source media="(min-width: 1024px)" srcset="img/17.jpg">
+                <img class="img_gallery" src="img/17-2.jpg" style="border-radius: 5px; max-height: 400px;" alt="">
+              </picture>
+              <div class="item item-type-move">
+                <div class="item-hover">
+                  <div class="item-info">
+                    <div class="headline">
+                      Найди
+                      <div class="line"></div>
+                    </div>
+                    <div class="item-text">точку опоры.</div>
+                  </div>
+                  <div class="mask"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </main>
+      </div>
+
+      <div class="grid-aside">
+        <aside class="aside">
+
+          <h2 class="aside_heading">cash:</h2>
+
+          <nav class="aside_nav">
+            <div class="aside_nav-item">
+              <a href="https://ru.pinterest.com/iren_constante/" target="_blank" class="aside_nav-link">my Pinterest</a>
+            </div>
+            <div class="aside_nav-item">
+              <a href="https://www.facebook.com/irina.khorova" target="_blank" class="aside_nav-link">my Facebook</a>
+            </div>
+            <div class="aside_nav-item">
+              <a href="https://vk.com/c_299792458" target="_blank" class="aside_nav-link">my Vkontakte</a>
+            </div>
+          </nav>
+
+        </aside>
+      </div>
+
+      <div class="grid-footer">
+        <footer class="footer">
+
+          <section class="footer_section">
+            <a href="tel:+79636772765" class="izuminka">call me maybe</a>
+          </section>
+
+          <section class="footer_section">
+            <div class="footer_copyright">All rights reserved © constante</div>
+          </section>
+
+          <section class="footer_section">
+            <div class="footer_email">E-mail: <a href="mailto:iren.constante@gmail.com" class="footer_email-link">iren.constante@gmail.com</a></div>
+          </section>
+
+        </footer>
+      </div>
+
     </div>
-  </main>
-  <footer class="footer">
-    <section class="footer_section">
-      <p class="footer_copyright">All rights reserved</p>
-    </section>
-    <section class="footer_section">
-      <p class="footer_copyright">© constante</p>
-    </section>
-    <section class="footer_section">
-      <p class="footer_email">E-mail: <a href="mailto:iren.constante@gmail.com" class="footer_email-link">iren.constante@gmail.com</a></p>
-    </section>
-  </footer>
+
   </body>
+
 </html>
