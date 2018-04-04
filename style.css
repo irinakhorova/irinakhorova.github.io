@@ -192,7 +192,7 @@ header {
 .izuminka {
   font-family: 'VT323', monospace;
   font-weight: lighter;
-  font-size: 11px;
+  font-size: 10px;
   text-decoration: none;
   color: rgba(10, 255, 223, 0.45);
   text-shadow: 0px 2px 0px rgb(251, 121, 121);
@@ -644,11 +644,11 @@ img {
     font-size: 21px;
   }
   .izuminka {
-    font-size: 15px;
+    font-size: 13px;
     margin-left: 10px;
   }
   .footer {
-    font-size: 10px;
+    font-size: 11px;
   }
 }
 
@@ -697,7 +697,7 @@ img {
   .iren_post-more-link {
     font-size: 17px;
   }
-  .izuminka { font-size: 19px; }
+  .izuminka { font-size: 18px; }
   .footer {
     font-size: 14px;
     margin-top: 15px;
