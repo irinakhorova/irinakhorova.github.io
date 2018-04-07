@@ -638,6 +638,11 @@ img {
   font-size: 11px;
 }
 
+.contacts_post-content:hover {
+  color: #918692;
+  text-decoration: none;
+}
+
 
 @media (min-width: 375px) {
   .header_heading {
