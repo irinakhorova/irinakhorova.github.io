@@ -64,6 +64,7 @@ header {
   text-decoration: none;
   font-weight: lighter;
   font-size: 17px;
+  margin-right: 4px;
   color: rgb(10, 255, 223);
 }
 
@@ -439,107 +440,10 @@ header {
   bottom:35%;
 }
 
-
-/*Анимация в шапке для gallery*/
-
-i {
-  display: inline-block;
-  position: relative;
-  width: 5px;
-  height: 2px;
-  background: rgb(10, 255, 223);
-  -webkit-animation: move 2.5s infinite;
-          animation: move 2.5s infinite;
-  -webkit-animation-timing-function: cubic-bezier(0.22, 0.6, 0.81, 0.16);
-          animation-timing-function: cubic-bezier(0.22, 0.6, 0.81, 0.16);
+svg,
+rect {
+  display: none;
 }
-
-@-webkit-keyframes move {
-  0% {
-    right: -10px;
-    bottom: 0;
-  }
-  10%{
-    -webkit-transform: rotate(-260deg);
-            transform: rotate(-260deg);
-    background-color: #c1a6a9;
-  }
-  100%{
-    bottom: 150px;
-  }
-}
-
-@keyframes move {
-  0% {
-    right: -10px;
-    bottom: 0;
-  }
-  10%{
-    -webkit-transform: rotate(-260deg);
-            transform: rotate(-260deg);
-    background-color: #c1a6a9;
-  }
-  100%{
-    bottom: 150px;
-  }
-}
-
-i:nth-child(2) {-webkit-animation-delay:.3s;animation-delay:.3s;}
-i:nth-child(3) {-webkit-animation-delay:.5s;animation-delay:.5s;}
-
-y {
-  display: inline-block;
-  position: relative;
-  width: 5px;
-  height: 2px;
-  background: rgb(10, 255, 223);
-  -webkit-animation: move2 2s infinite;
-          animation: move2 2s infinite;
-  animation-direction: alternate-reverse;
-  -webkit-animation-timing-function: cubic-bezier(0.21, 0.52, 0.72, 0.24);
-          animation-timing-function: cubic-bezier(0.21, 0.52, 0.72, 0.24);
-}
-
-@-webkit-keyframes move2 {
-  0% {
-    left: 2px;
-    bottom: 0;
-  }
-  5%{
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-    background-color: #c1a6a9;
-  }
-  100%{
-    bottom: 150px;
-  }
-}
-
-@keyframes move2 {
-  0% {
-    left: 2px;
-    bottom: 0;
-  }
-  5%{
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-    background-color: #c1a6a9;
-  }
-  100%{
-    bottom: 150px;
-  }
-}
-
-y:nth-child(2) {-webkit-animation-delay:.3s;animation-delay:.3s;}
-y:nth-child(3) {-webkit-animation-delay:.6s;animation-delay:.6s;}
-
-
-/* Set the color of the icon */
-svg path,
-svg rect{
-  fill: rgb(10, 255, 223);
-}
-
 
 .iren_flow {
   display: -ms-grid;
@@ -644,7 +548,7 @@ img {
 }
 
 
-@media (min-width: 375px) {
+@media (min-width: 400px) {
   .header_heading {
     font-size: 21px;
   }
@@ -658,6 +562,115 @@ img {
     font-size: 13px;
     margin-left: 10px;
   }
+  /*Анимация в шапке для gallery*/
+
+  i {
+    display: inline-block;
+    position: relative;
+    width: 5px;
+    height: 2px;
+    background: rgb(10, 255, 223);
+    -webkit-animation: move 2.5s infinite;
+            animation: move 2.5s infinite;
+    -webkit-animation-timing-function: cubic-bezier(0.22, 0.6, 0.81, 0.16);
+            animation-timing-function: cubic-bezier(0.22, 0.6, 0.81, 0.16);
+  }
+
+  @-webkit-keyframes move {
+    0% {
+      right: -10px;
+      bottom: 0;
+    }
+    10%{
+      -webkit-transform: rotate(-260deg);
+              transform: rotate(-260deg);
+      background-color: #c1a6a9;
+    }
+    100%{
+      bottom: 150px;
+    }
+  }
+
+  @keyframes move {
+    0% {
+      right: -10px;
+      bottom: 0;
+    }
+    10%{
+      -webkit-transform: rotate(-260deg);
+              transform: rotate(-260deg);
+      background-color: #c1a6a9;
+    }
+    100%{
+      bottom: 150px;
+    }
+  }
+
+  i:nth-child(2) {-webkit-animation-delay:.3s;animation-delay:.3s;}
+  i:nth-child(3) {-webkit-animation-delay:.5s;animation-delay:.5s;}
+
+  y {
+    display: inline-block;
+    position: relative;
+    width: 5px;
+    height: 2px;
+    background: rgb(10, 255, 223);
+    -webkit-animation: move2 2s infinite;
+            animation: move2 2s infinite;
+    animation-direction: alternate-reverse;
+    -webkit-animation-timing-function: cubic-bezier(0.21, 0.52, 0.72, 0.24);
+            animation-timing-function: cubic-bezier(0.21, 0.52, 0.72, 0.24);
+  }
+
+  @-webkit-keyframes move2 {
+    0% {
+      left: 2px;
+      bottom: 0;
+    }
+    5%{
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+      background-color: #c1a6a9;
+    }
+    100%{
+      bottom: 150px;
+    }
+  }
+
+  @keyframes move2 {
+    0% {
+      left: 2px;
+      bottom: 0;
+    }
+    5%{
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+      background-color: #c1a6a9;
+    }
+    100%{
+      bottom: 150px;
+    }
+  }
+
+  y:nth-child(2) {-webkit-animation-delay:.3s;animation-delay:.3s;}
+  y:nth-child(3) {-webkit-animation-delay:.6s;animation-delay:.6s;}
+
+  svg,
+  rect {
+    display: inline-block;
+    }
+
+  /* Set the color of the icon */
+  svg path,
+  svg rect {
+    fill: rgb(10, 255, 223);
+  }
+
+  rect {
+    width: 2.5px;
+    height: 5px;
+  }
+
   .footer {
     font-size: 11px;
   }
