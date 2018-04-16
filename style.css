@@ -306,7 +306,7 @@ header {
 }
 
 .gallery {
-  padding-left: 28px;
+  padding-left: 30px;
   padding-bottom: 30px;
   padding-top: 10px;
 }
@@ -738,7 +738,6 @@ img {
     margin-top: 10px;
   }
   .gallery_grid {
-    padding: 1px;
     display: -ms-grid;
     display: grid;
     grid-gap: 1px;
@@ -828,7 +827,6 @@ img {
     font-size: 22px;
   }
   .gallery_grid {
-    padding: 20px;
     grid-gap: 20px;
     -ms-grid-columns: (minmax(200px, 1fr))[auto-fill];
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
