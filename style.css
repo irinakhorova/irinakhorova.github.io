@@ -193,7 +193,7 @@ header {
 .izuminka {
   font-family: 'VT323', monospace;
   font-weight: lighter;
-  font-size: 10px;
+  font-size: 8.3px;
   text-decoration: none;
   color: rgba(10, 255, 223, 0.45);
   text-shadow: 0px 2px 0px rgb(251, 121, 121);
@@ -250,7 +250,7 @@ header {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  font-size: 10px;
+  font-size: 9px;
   text-align: center;
   /* design */
   color: white;
@@ -558,7 +558,7 @@ img {
     font-size: 21px;
   }
   .izuminka {
-    font-size: 13px;
+    font-size: 11.7px;
     margin-left: 10px;
   }
   /*Анимация в шапке для gallery*/
@@ -671,7 +671,7 @@ img {
   }
 
   .footer {
-    font-size: 11px;
+    font-size: 10px;
   }
 }
 
